@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SAAR Aroma — Complete Cleaning Combo. Hand wash, dish wash, toilet cleaner & floor cleaner. 4 powerful products, 1 complete solution at just ₹299. Order online." />
+  <title>SAAR Aroma — Complete Cleaning Combo | Clean Home, Happy Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Daily Offer Banner -->
+  <div class="offer-banner" id="offerBanner">
+    <span class="offer-tag">TODAY'S OFFER</span>
+    <span id="offerText">Loading today's deal…</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <img src="assets/logo.png" alt="SAAR Aroma" class="brand-logo"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <span class="brand-text" style="display:none">
+          <span class="brand-mark">SAAR</span>
+          <span class="brand-sub">Aroma</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="#combo">Combo Offer</a>
+        <a href="#products">Products</a>
+        <a href="#why">Why Us</a>
+        <a href="#order" class="btn btn-sm">Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Complete Cleaning Combo</p>
+        <h1>Clean Home,<br /><span>Happy Home.</span></h1>
+        <p class="lead">Four powerful SAAR Aroma cleaners — hand wash, dish wash, toilet cleaner and floor cleaner — in one complete solution for every corner of your home.</p>
+        <div class="hero-actions">
+          <a href="#combo" class="btn btn-gold">Grab Combo @ ₹299</a>
+          <a href="#products" class="btn btn-outline">View Products</a>
+        </div>
+        <ul class="hero-trust">
+          <li>✓ Tough on dirt &amp; germs</li>
+          <li>✓ Long-lasting fragrance</li>
+          <li>✓ Trusted by 1000s of homes</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <!-- Save your poster as assets/combo.jpg to show it here -->
+        <img src="assets/combo.jpg" alt="SAAR Aroma Complete Cleaning Combo — 4 products"
+             onerror="this.classList.add('img-missing'); this.alt='Add your poster at assets/combo.jpg';" />
+        <div class="hero-badge">
+          <span class="hb-top">COMBO OFFER</span>
+          <span class="hb-price">₹299</span>
+          <span class="hb-bottom">★ BEST VALUE ★</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMBO OFFER (highlighted) -->
+  <section class="combo" id="combo">
+    <div class="container">
+      <div class="combo-card">
+        <div class="combo-ribbon">BEST VALUE</div>
+        <div class="combo-left">
+          <p class="eyebrow light">Complete Cleaning Combo</p>
+          <h2>4 Powerful Products,<br />1 Complete Solution</h2>
+          <ul class="combo-list">
+            <li>🌹 Rose Fresh Hand Wash — 250 ml</li>
+            <li>🍋 Active Dish Wash (Lemon Power) — 250 ml</li>
+            <li>🚽 Power Toilet Cleaner (10x) — 500 ml</li>
+            <li>🌸 Sparkle Floor Cleaner — 500 ml</li>
+          </ul>
+          <p class="combo-cover">Complete care for your home — Kitchen · Bathroom · Floors · Every corner.</p>
+        </div>
+        <div class="combo-right">
+          <div class="combo-badge">
+            <span class="cb-top">COMBO OFFER</span>
+            <span class="cb-price">₹299</span>
+            <span class="cb-strike" id="comboStrike">₹436</span>
+            <span class="cb-save" id="comboSave">SAVE ₹137</span>
+          </div>
+          <a href="#order" class="btn btn-gold btn-block" data-product="Complete Cleaning Combo">Order Combo Now</a>
+          <p class="combo-stock">⚡ Limited daily stock</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2 class="section-title">Our Products</h2>
+      <p class="section-sub">Buy together as a combo — or pick what you need.</p>
+      <div class="product-grid" id="productGrid"><!-- injected by JS --></div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="why" id="why">
+    <div class="container">
+      <h2 class="section-title">Why SAAR Aroma?</h2>
+      <div class="why-grid">
+        <div class="why-item"><span class="why-ico">💪</span><h3>Tough on Dirt &amp; Germs</h3><p>Powerful formula that cuts grease, stains and germs.</p></div>
+        <div class="why-item"><span class="why-ico">🌸</span><h3>Long-Lasting Fragrance</h3><p>Fresh, lasting aroma in every corner of your home.</p></div>
+        <div class="why-item"><span class="why-ico">🫧</span><h3>Foam Boost Technology</h3><p>Rich foam for a deeper, more effective clean.</p></div>
+        <div class="why-item"><span class="why-ico">🏆</span><h3>Premium Quality</h3><p>Trusted by thousands of homes for sparkling results.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order / Enquiry -->
+  <section class="order" id="order">
+    <div class="container order-inner">
+      <div class="order-copy">
+        <h2 class="section-title">Order or Enquire</h2>
+        <p>Fill in your details and we'll confirm your order over WhatsApp or email. Today's offer is applied automatically.</p>
+        <ul class="order-points">
+          <li>✓ Cash on delivery — confirm by chat</li>
+          <li>✓ Bulk &amp; wholesale enquiries welcome</li>
+          <li>✓ Combo &amp; daily offers applied</li>
+        </ul>
+      </div>
+
+      <form class="order-form" id="orderForm" novalidate>
+        <div class="field">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name" />
+        </div>
+        <div class="field">
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="e.g. 98765 43210" />
+        </div>
+        <div class="field">
+          <label for="product">Product</label>
+          <select id="product" name="product">
+            <option value="Complete Cleaning Combo">Complete Cleaning Combo (₹299)</option>
+            <option value="Rose Fresh Hand Wash">Rose Fresh Hand Wash</option>
+            <option value="Active Dish Wash">Active Dish Wash</option>
+            <option value="Power Toilet Cleaner">Power Toilet Cleaner</option>
+            <option value="Sparkle Floor Cleaner">Sparkle Floor Cleaner</option>
+          </select>
+        </div>
+        <div class="field field-row">
+          <div>
+            <label for="qty">Quantity</label>
+            <input type="number" id="qty" name="qty" min="1" value="1" />
+          </div>
+          <div>
+            <label for="type">Type</label>
+            <select id="type" name="type">
+              <option value="Order">Order</option>
+              <option value="Enquiry">Enquiry</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="address">Delivery Address</label>
+          <textarea id="address" name="address" rows="2" placeholder="House / street / city / pincode"></textarea>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="2" placeholder="Anything else we should know?"></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-wa">Send via WhatsApp</button>
+          <button type="button" class="btn btn-outline" id="emailBtn">Send via Email</button>
+        </div>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Care bar -->
+  <section class="care-bar">
+    <div class="container care-inner">
+      <span class="care-title">🛡️ Complete Care For Your Home</span>
+      <span class="care-item">🍽️ Kitchen</span>
+      <span class="care-item">🛁 Bathroom</span>
+      <span class="care-item">✨ Floors</span>
+      <span class="care-item">🏠 Every Corner</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <img src="assets/logo.png" alt="SAAR Aroma" class="footer-logo" onerror="this.style.display='none'" />
+        <p>Hand Wash · Dish Wash · Toilet Cleaner · Floor Cleaner</p>
+        <p class="tagline">Clean Home, Happy Home</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://wa.me/917558692892" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:shkemran@gmail.com">shkemran@gmail.com</a>
+      </div>
+      <p class="copyright">© <span id="year"></span> SAAR Aroma. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
