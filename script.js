@@ -9,7 +9,7 @@
 // ---- CONFIG: update these for the real business ----
 const CONFIG = {
   whatsappNumber: "917558692892",        // international format, no "+" or spaces
-  email: "shkemran@gmail.com",
+  email: "rshaikh720@gmail.com",
   comboPrice: 299,                        // ₹ combo price for all 4 products
   currency: "₹",
 };
@@ -105,7 +105,7 @@ function renderProducts() {
       ? `<span class="price">${money(finalPrice)}</span><span class="price-old">${money(p.price)}</span>`
       : `<span class="price">${money(p.price)}</span>`;
     return `
-      <article class="product-card">
+      <article class="product-card" id="product-${p.id}">
         ${badge}
         <div class="product-emoji" style="background:${p.bg}">${p.emoji}</div>
         <h3>${p.name}</h3>
@@ -126,6 +126,36 @@ document.querySelectorAll("[data-product]").forEach((btn) => {
     if ([...sel.options].some((o) => o.value === val)) sel.value = val;
   });
 });
+
+// ---- Categories dropdown: tap-to-toggle on touch / mobile + highlight target ----
+const dropdown = document.querySelector(".nav-dropdown");
+if (dropdown) {
+  const toggle = dropdown.querySelector(".nav-dropdown-toggle");
+  toggle.addEventListener("click", (e) => {
+    // On small screens (hover unavailable), tapping the toggle opens the menu
+    if (window.matchMedia("(hover: none)").matches) {
+      e.preventDefault();
+      dropdown.classList.toggle("open");
+    }
+  });
+  // Close after picking a category, and briefly highlight the product card
+  dropdown.querySelectorAll(".nav-dropdown-menu a").forEach((link) => {
+    link.addEventListener("click", () => {
+      dropdown.classList.remove("open");
+      const id = link.getAttribute("href").slice(1);
+      const card = document.getElementById(id);
+      if (card) {
+        card.classList.remove("flash");
+        void card.offsetWidth; // restart animation
+        card.classList.add("flash");
+      }
+    });
+  });
+  // Click outside closes the open menu
+  document.addEventListener("click", (e) => {
+    if (!dropdown.contains(e.target)) dropdown.classList.remove("open");
+  });
+}
 
 // ---- Form handling ----
 const form = document.getElementById("orderForm");
